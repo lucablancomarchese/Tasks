@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AE60CF2E-91B1-4F99-9309-3E526E6D0BC5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3901492E-AE54-4F13-AB53-5724A6043871"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDone/ViewModels/RegisterViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "RegisterViewViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - ac046c93e68130b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of ToDone.RegisterViewViewModel.firstname : Swift.String"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/ToDone/ViewModels/RegisterViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - 83be1dd77c848d9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.firstname.getter : Swift.String"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/ToDone/ViewModels/RegisterViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - bb438fbea46db814"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.firstname.setter : Swift.String"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/ToDone/ViewModels/RegisterViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - 6cd9f68032b5dbeb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.firstname.modify : Swift.String"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/ToDone/ViewModels/RegisterViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - d3a92cef0da1af37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.firstname.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - 41e583606c6e660d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.$firstname.getter : Combine.Published&lt;Swift.String&gt;.Publisher"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/ToDone/ViewModels/RegisterViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - 25f7f451957f4d1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.$firstname.setter : Combine.Published&lt;Swift.String&gt;.Publisher"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - 9b11ca13652f9c2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.$firstname.modify : Combine.Published&lt;Swift.String&gt;.Publisher"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3901492E-AE54-4F13-AB53-5724A6043871 - 2249651bbe829652"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDone.RegisterViewViewModel.$firstname.modify : Combine.Published&lt;Swift.String&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ToDone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucablancomarchese/Desktop/1_Projects/ToDone/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

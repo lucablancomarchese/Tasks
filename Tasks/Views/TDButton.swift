@@ -19,6 +19,7 @@ struct TDButton: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(background)
+                        .frame(width: 300, height: 50)
                     
                     Text(buttontitle)
                         .foregroundColor(Color.white)
@@ -26,7 +27,7 @@ struct TDButton: View {
                     
                 }
             }
-            .padding()
+            
         
     }
 }

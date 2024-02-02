@@ -12,33 +12,62 @@ struct LoginView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                //Header
-                HeaderView(title: "ToDone", subtitle: "Log In", background: .yellow)
-                //LoginForm
-                Form {
+            ZStack {
+                Rectangle().foregroundColor(.white).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                
+                VStack {
+                    //Header
+                    Spacer()
+                    HeaderView(title: "Tasks", subtitle: "Log In", background: .white)
+                    //LoginForm
                     
-                    TextField("E-Mail Adresse", text: $viewModel.email)
-                        .autocorrectionDisabled()
-                        .autocapitalization(.none)
-                    SecureField("Passwort", text: $viewModel.password)
-                    TDButton(buttontitle: "Log In", background:.blue ) {
-                        viewModel.login()
-                    }
                     if !viewModel.errorMessage.isEmpty {
                         Text(viewModel.errorMessage)
                             .foregroundColor(.red)
                     }
+                        
+                    TextField("Email", text: $viewModel.email)
+                        .frame(width: 300)
+                        .padding()
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
+                        .keyboardType(.emailAddress)
+                        .disableAutocorrection(true)
+                        .font(.title3)
+                        .background(Color.white)
+                        .cornerRadius(13.0)
+                        .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                        .offset(y: -50)
+                           
+                    
+                    SecureField("Password", text: $viewModel.password)
+                        .frame(width: 300)
+                        .keyboardType(.emailAddress)
+                        .textInputAutocapitalization(.never)
+                        .disableAutocorrection(true)
+                        .font(.title3)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(13.0)
+                        .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                        .offset(y: -50)
+                       
+                    TDButton(buttontitle: "Log In", background:.blue ) {
+                        viewModel.login()
+                    }.padding().offset(y: -50)
+                    
+                   
+                    
+                    Spacer()
+                        
+                    //Link to Create Account
+                    VStack {
+                        Text("New Arround here?")
+                        NavigationLink("Sign In", destination: RegisterView())
+                    }
+                    .padding(.bottom, 50)
+                    Spacer()
                 }
-                .offset(y: -50)
-                
-                //Create Account
-                VStack {
-                    Text("Neu hier?")
-                    NavigationLink("Registriere Dich", destination: RegisterView()) 
-                }
-                .padding(.bottom, 50)
-                Spacer()
             }
         }
     }

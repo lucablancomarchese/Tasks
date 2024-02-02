@@ -18,20 +18,27 @@ struct HeaderView: View {
         ZStack {
             Rectangle()
                 .foregroundColor(background)
-                
-            VStack {
-                Text(title)
-                    .foregroundColor(.white)
-                    .font(.custom("Basis Grotesque Arabic Pro", size: 20))
-                    .bold()
-                
-                Text(subtitle.trimmingCharacters(in: .whitespaces))
-                    .foregroundColor(.white)
-                    .font(.custom("Basis Grotesque Arabic Pro", size: 40))
+            VStack (alignment: .leading) {
+                HStack {
                     
+                    Text(title)
+                        .foregroundColor(.black)
+                        
+                }
+                .padding(.leading, -150.0)
+                
+                HStack {
+                    Text(subtitle.trimmingCharacters(in: .whitespaces))
+                        .foregroundColor(.black)
+                        .bold()
+                        .font(.system(size: 50))
+                        
                     
+                        
+                }
+                .padding(.leading, -150.0)
+               
             }
-            .padding(.top, 100)
         }
         .frame(width: UIScreen.main.bounds.width * 3, height: 300)
         .offset(y: -100)

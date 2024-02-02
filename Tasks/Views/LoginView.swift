@@ -18,7 +18,7 @@ struct LoginView: View {
                 VStack {
                     //Header
                     Spacer()
-                    HeaderView(title: "Tasks", subtitle: "Log In", background: .white)
+                    HeaderView(title: "Tasks", subtitle: "Sign Up", background: .white)
                     //LoginForm
                     
                     if !viewModel.errorMessage.isEmpty {
@@ -52,7 +52,7 @@ struct LoginView: View {
                         .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
                         .offset(y: -50)
                        
-                    TDButton(buttontitle: "Log In", background:.blue ) {
+                    TDButton(buttontitle: "Sign Up", background:.blue ) {
                         viewModel.login()
                     }.padding().offset(y: -50)
                     

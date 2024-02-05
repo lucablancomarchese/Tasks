@@ -11,35 +11,46 @@ struct ToDoListView: View {
     @StateObject var viewModel: ToDoListViewViewModel
     @FirestoreQuery var items: [ToDoListItem]
     
-  
+    private var uid: String
+    
+    
     
     init(userId: String) {
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
         
         self._viewModel = StateObject(wrappedValue: ToDoListViewViewModel(userId: userId))
         
+        self.uid = userId
     }
     
     var body: some View {
         NavigationView {
             VStack {
                 List(items) { item in
-                    ToDoListItemView(item: item)
-                        .swipeActions { Button {viewModel.delete(id: item.id )} label: {Text("Delete")}}.tint(.red)
+                    if !item.isDone {
+                        ToDoListItemView(item: item)
+                            .swipeActions { Button {viewModel.delete(id: item.id )} label: {Text("Delete")}}.tint(.red)
+                    }
+                    
                 }
                 .listStyle(PlainListStyle())
             }
             .navigationTitle("Tasks")
             .toolbar {
-                Button {
-                    viewModel.showingNewItemView = true
-                } label: {
-                    Image(systemName: "plus")
+                NavigationLink(destination: DoneTasksView(userId: uid)) {
+                    Image(systemName: "checkmark.circle.fill")
+                    Button {
+                        viewModel.showingNewItemView = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    
+                }.sheet(isPresented: $viewModel.showingNewItemView) { //isPresented erwartet ein boolschen Wert
+                    NewItemView(newItemPresented: $viewModel.showingNewItemView)
                 }
-            }.sheet(isPresented: $viewModel.showingNewItemView) { //isPresented erwartet ein boolschen Wert
-                NewItemView(newItemPresented: $viewModel.showingNewItemView)
+                
+                
             }
-            
         }
     }
 }

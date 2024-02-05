@@ -3,10 +3,10 @@
 "Tasks" should be an app that helps make life more organized and productive.
 
 ## 📺 Technologies
-
-- ```Swift
-- ```SwiftUI
-- ```Firebase
+---
+- *Swift*
+- *SwiftUI*
+- *Firebase*
 
 
 

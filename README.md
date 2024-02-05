@@ -4,7 +4,7 @@
 
 ## 📺 Technologies
 
-- Swift
+- 'Swift'
 - SwiftUI
 - Firebase
 

@@ -1,12 +1,12 @@
 # 📋 Tasklist to get things done.
----
+
 "Tasks" should be an app that helps make life more organized and productive.
 
 ## 📺 Technologies
----
-- *Swift*
-- *SwiftUI*
-- *Firebase*
+
+- _Swift_
+- _SwiftUI_
+- _Firebase_
 
 
 

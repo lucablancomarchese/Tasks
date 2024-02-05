@@ -4,9 +4,9 @@
 
 ## 📺 Technologies
 
-- _Swift_
-- _SwiftUI_
-- _Firebase_
+- Swift
+- SwiftUI
+- Firebase
 
 
 

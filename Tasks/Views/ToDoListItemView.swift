@@ -13,20 +13,31 @@ struct ToDoListItemView: View {
     let item: ToDoListItem
     
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(item.title)
-                    .font(.body)
-                    .bold()
-                Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
-                    .font(.footnote)
-            }
-            Spacer()
-            
-            Button {
-                viewModel.toggleIsDone(item: item)
-            } label: {
-                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+        ZStack {
+            Rectangle()
+                .foregroundColor(.yellow)
+                .frame(height: 100)
+                .cornerRadius(15)
+            HStack {
+                
+                VStack(alignment: .leading) {
+                    Text(item.title)
+                        .font(.body)
+                        .bold()
+                        //.padding(.bottom, 10)
+                        .padding(.leading, 15)
+                    
+                    Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
+                        .font(.footnote)
+                        .padding(.leading, 15)
+                }
+                Spacer()
+                
+                Button {
+                    viewModel.toggleIsDone(item: item)
+                } label: {
+                    Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                }.padding(.trailing, 15)
             }
         }
     }

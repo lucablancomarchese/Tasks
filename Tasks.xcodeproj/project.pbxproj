@@ -66,6 +66,7 @@
 		7AB2E0792B5202CC009E28A2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB2E0782B5202CC009E28A2 /* FirebaseStorage */; };
 		7AB2E07B2B5202CC009E28A2 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB2E07A2B5202CC009E28A2 /* FirebaseStorageCombine-Community */; };
 		7AB2E07D2B52041A009E28A2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2E07C2B52041A009E28A2 /* Extensions.swift */; };
+		7AE5279A2B7149A500750F29 /* DoneTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE527992B7149A500750F29 /* DoneTasksView.swift */; };
 		7AEEB5412B4766860021011E /* ToDoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB5402B4766860021011E /* ToDoneApp.swift */; };
 		7AEEB5432B4766860021011E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB5422B4766860021011E /* MainView.swift */; };
 		7AEEB5452B4766870021011E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AEEB5442B4766870021011E /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 		7A9A9FC62B6E5A720025F0E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A9AC2FF2B6FDBC30000F42C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7AB2E07C2B52041A009E28A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7AE527992B7149A500750F29 /* DoneTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksView.swift; sourceTree = "<group>"; };
 		7AEEB53D2B4766860021011E /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEEB5402B4766860021011E /* ToDoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoneApp.swift; sourceTree = "<group>"; };
 		7AEEB5422B4766860021011E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				7AEEB56F2B4771060021011E /* RegisterView.swift */,
 				7A7F668C2B4848FD00152692 /* HeaderView.swift */,
 				7A7F668E2B4A095A00152692 /* TDButton.swift */,
+				7AE527992B7149A500750F29 /* DoneTasksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				7AEEB5782B4771AA0021011E /* User.swift in Sources */,
 				7AB2E07D2B52041A009E28A2 /* Extensions.swift in Sources */,
 				7AEEB56C2B4770D60021011E /* ProfileView.swift in Sources */,
+				7AE5279A2B7149A500750F29 /* DoneTasksView.swift in Sources */,
 				7AEEB56E2B4770F60021011E /* LoginView.swift in Sources */,
 				7AEEB57A2B4771C70021011E /* ToDoListItem.swift in Sources */,
 				7AEEB5412B4766860021011E /* ToDoneApp.swift in Sources */,

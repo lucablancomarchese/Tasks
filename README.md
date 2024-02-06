@@ -1,4 +1,4 @@
-# 📋 Tasklist to get things done.
+# 📋 Tasks.
 
 "Tasks" should be an app that helps make life more organized and productive.
 

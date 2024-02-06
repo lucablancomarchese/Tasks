@@ -25,32 +25,33 @@ struct ToDoListView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                List(items) { item in
-                    if !item.isDone {
-                        ToDoListItemView(item: item)
-                            .swipeActions { Button {viewModel.delete(id: item.id )} label: {Text("Delete")}}.tint(.red)
+                VStack {
+                    Divider()
+                    List(items) { item in
+                        if !item.isDone {
+                            ToDoListItemView(item: item)
+                                .swipeActions { Button {viewModel.delete(id: item.id )} label: {Text("Delete")}}.tint(.red)
+                        }
+                        
                     }
-                    
+                    .listStyle(PlainListStyle())
+             
                 }
-                .listStyle(PlainListStyle())
-            }
-            .navigationTitle("Tasks")
-            .toolbar {
-                NavigationLink(destination: DoneTasksView(userId: uid)) {
-                    Image(systemName: "checkmark.circle.fill")
-                    Button {
-                        viewModel.showingNewItemView = true
-                    } label: {
-                        Image(systemName: "plus")
+                .navigationTitle("Tasks")
+                .toolbar {
+                    
+                    NavigationLink(destination: DoneTasksView(userId: uid)) {
+                        Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
+                        Button {
+                            viewModel.showingNewItemView = true
+                        } label: {
+                            Image(systemName: "plus").foregroundColor(Color(hex: "F0C43F"))
+                        }
+                    
+                    }.sheet(isPresented: $viewModel.showingNewItemView) { //isPresented     erwartet ein boolschen Wert
+                        NewItemView(newItemPresented: $viewModel.showingNewItemView)
                     }
-                    
-                }.sheet(isPresented: $viewModel.showingNewItemView) { //isPresented erwartet ein boolschen Wert
-                    NewItemView(newItemPresented: $viewModel.showingNewItemView)
                 }
-                
-                
-            }
         }
     }
 }

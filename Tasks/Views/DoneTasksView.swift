@@ -18,6 +18,7 @@ struct DoneTasksView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Divider()
                 List(items) { item in
                     if item.isDone {
                         ToDoListItemView(item: item)

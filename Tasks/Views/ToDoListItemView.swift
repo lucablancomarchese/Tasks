@@ -15,7 +15,7 @@ struct ToDoListItemView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.yellow)
+                .foregroundColor(Color(hex: "F0C43F"))
                 .frame(height: 100)
                 .cornerRadius(15)
             HStack {

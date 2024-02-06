@@ -5,8 +5,8 @@
 ## 📺 Technologies
 
 - `Swift`
-- SwiftUI
-- Firebase
+- `SwiftUI`
+- `Firebase`
 
 
 

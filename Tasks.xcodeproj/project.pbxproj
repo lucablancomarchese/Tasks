@@ -209,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				7AEEB53F2B4766860021011E /* Tasks */,
+				7A9AC2FF2B6FDBC30000F42C /* GoogleService-Info.plist */,
 				7AEEB53E2B4766860021011E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -285,7 +286,6 @@
 		7AEEB56A2B476DAB0021011E /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				7A9AC2FF2B6FDBC30000F42C /* GoogleService-Info.plist */,
 				7AEEB5442B4766870021011E /* Assets.xcassets */,
 				7AEEB5402B4766860021011E /* ToDoneApp.swift */,
 				7AB2E07C2B52041A009E28A2 /* Extensions.swift */,

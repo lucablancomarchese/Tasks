@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A35159A2B8E2033005CD961 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3515992B8E2033005CD961 /* CalendarView.swift */; };
 		7A35159C2B8E2045005CD961 /* CalendarViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35159B2B8E2045005CD961 /* CalendarViewViewModel.swift */; };
+		7A35159E2B8F5D2A005CD961 /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35159D2B8F5D2A005CD961 /* PickerTextField.swift */; };
 		7A56D0822B6B1A9F00414C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56D0812B6B1A9F00414C8A /* LaunchScreen.storyboard */; };
 		7A7F668D2B4848FD00152692 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F668C2B4848FD00152692 /* HeaderView.swift */; };
 		7A7F668F2B4A095A00152692 /* TDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F668E2B4A095A00152692 /* TDButton.swift */; };
@@ -104,6 +105,7 @@
 /* Begin PBXFileReference section */
 		7A3515992B8E2033005CD961 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		7A35159B2B8E2045005CD961 /* CalendarViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewViewModel.swift; sourceTree = "<group>"; };
+		7A35159D2B8F5D2A005CD961 /* PickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
 		7A56D0812B6B1A9F00414C8A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A7F668C2B4848FD00152692 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		7A7F668E2B4A095A00152692 /* TDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDButton.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				7AB2E07C2B52041A009E28A2 /* Extensions.swift */,
 				7A56D0812B6B1A9F00414C8A /* LaunchScreen.storyboard */,
 				7A9AC2FF2B6FDBC30000F42C /* GoogleService-Info.plist */,
+				7A35159D2B8F5D2A005CD961 /* PickerTextField.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				7AEEB56E2B4770F60021011E /* LoginView.swift in Sources */,
 				7AEEB57A2B4771C70021011E /* ToDoListItem.swift in Sources */,
 				7AEEB5412B4766860021011E /* ToDoneApp.swift in Sources */,
+				7A35159E2B8F5D2A005CD961 /* PickerTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

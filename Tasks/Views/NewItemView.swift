@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewItemView: View {
     @StateObject var viewModel = NewItemViewViewModel() //Erstellt Instanz von NewItemViewViewModel Klasse
+    @State private var lastSelectedIndex: Int?
     @Binding var newItemPresented: Bool
     var body: some View {
         VStack {
@@ -17,6 +18,8 @@ struct NewItemView: View {
             Form {
                 //Title
                 TextField("Title", text: $viewModel.title)
+                //Type
+                PickerTextField(data: ["Deadline", "Event"], placerholder: "Type", lastSelectedIndex: self.$lastSelectedIndex)
                 //Due Date
                 DatePicker("Due Date", selection: $viewModel.dueDate)
                     .datePickerStyle(GraphicalDatePickerStyle())

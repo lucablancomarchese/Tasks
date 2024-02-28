@@ -31,18 +31,20 @@ struct ToDoListView: View {
                         if !item.isDone {
                             ToDoListItemView(item: item)
                                 .swipeActions { Button {viewModel.delete(id: item.id )} label: {Text("Delete")}}.tint(.red)
+                                
                         }
                         
                     }
                     .listStyle(PlainListStyle())
              
                 }
+                
                 .navigationTitle("Tasks")
                 .toolbar {
                     
                     NavigationLink(destination: DoneTasksView(userId: uid)) {
                         Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
-                        Button {
+                        Button (){
                             viewModel.showingNewItemView = true
                         } label: {
                             Image(systemName: "plus").foregroundColor(Color(hex: "F0C43F"))

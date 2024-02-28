@@ -23,9 +23,13 @@ struct MainView: View {
             ToDoListView(userId: viewModel.currentUserID).tabItem {
                 Label("Tasks", systemImage: "checklist")
             }
+            CalendarView().tabItem {
+                Label("Calendar", systemImage: "calendar.circle")
+            }
             ProfileView().tabItem {
                 Label("Profile", systemImage: "person.circle")
             }
+            
             
         }
     }

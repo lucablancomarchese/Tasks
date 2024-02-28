@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A35159A2B8E2033005CD961 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3515992B8E2033005CD961 /* CalendarView.swift */; };
+		7A35159C2B8E2045005CD961 /* CalendarViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35159B2B8E2045005CD961 /* CalendarViewViewModel.swift */; };
 		7A56D0822B6B1A9F00414C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56D0812B6B1A9F00414C8A /* LaunchScreen.storyboard */; };
 		7A7F668D2B4848FD00152692 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F668C2B4848FD00152692 /* HeaderView.swift */; };
 		7A7F668F2B4A095A00152692 /* TDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F668E2B4A095A00152692 /* TDButton.swift */; };
@@ -100,6 +102,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A3515992B8E2033005CD961 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		7A35159B2B8E2045005CD961 /* CalendarViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewViewModel.swift; sourceTree = "<group>"; };
 		7A56D0812B6B1A9F00414C8A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A7F668C2B4848FD00152692 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		7A7F668E2B4A095A00152692 /* TDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDButton.swift; sourceTree = "<group>"; };
@@ -254,6 +258,7 @@
 				7A7F668C2B4848FD00152692 /* HeaderView.swift */,
 				7A7F668E2B4A095A00152692 /* TDButton.swift */,
 				7AE527992B7149A500750F29 /* DoneTasksView.swift */,
+				7A3515992B8E2033005CD961 /* CalendarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				7AEEB5852B47731E0021011E /* ToDoListItemViewViewModel.swift */,
 				7AEEB57F2B4772CD0021011E /* LoginViewViewModel.swift */,
 				7AEEB5812B4772E20021011E /* RegisterViewViewModel.swift */,
+				7A35159B2B8E2045005CD961 /* CalendarViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -440,8 +446,10 @@
 				7A7F668D2B4848FD00152692 /* HeaderView.swift in Sources */,
 				7AEEB5722B47711A0021011E /* ToDoListView.swift in Sources */,
 				7AEEB5862B47731E0021011E /* ToDoListItemViewViewModel.swift in Sources */,
+				7A35159C2B8E2045005CD961 /* CalendarViewViewModel.swift in Sources */,
 				7AEEB57C2B4772B30021011E /* MainViewViewModel.swift in Sources */,
 				7A7F668F2B4A095A00152692 /* TDButton.swift in Sources */,
+				7A35159A2B8E2033005CD961 /* CalendarView.swift in Sources */,
 				7AEEB5742B4771320021011E /* ToDoListItemView.swift in Sources */,
 				7AEEB5842B4773090021011E /* ToDoListViewViewModel.swift in Sources */,
 				7AEEB5432B4766860021011E /* MainView.swift in Sources */,

@@ -27,7 +27,7 @@ struct ToDoListView: View {
         NavigationView {
                 VStack {
                     Divider()
-                    List(items) { item in
+                    List(items.sorted {$0.dueDate < $1.dueDate}) { item in //Listet die Tasks sortiert nach dem ablaufdatum
                         if !item.isDone {
                             ToDoListItemView(item: item)
                                 .swipeActions { Button {viewModel.delete(id: item.id )} label: {Text("Delete")}}.tint(.red)
@@ -36,6 +36,7 @@ struct ToDoListView: View {
                         
                     }
                     .listStyle(PlainListStyle())
+                    
              
                 }
                 

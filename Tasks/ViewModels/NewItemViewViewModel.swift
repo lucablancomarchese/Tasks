@@ -11,6 +11,7 @@ import FirebaseAuth
 
 class NewItemViewViewModel: ObservableObject {
     @Published var title = ""
+    @Published var type = ""
     @Published var dueDate = Date()
     @Published var showAlert = false
     
@@ -26,7 +27,7 @@ class NewItemViewViewModel: ObservableObject {
         }
         //Create model
         let newId = UUID().uuidString
-        let newItem = ToDoListItem(id: newId, title: title, dueDate: dueDate.timeIntervalSince1970, createdDate: Date().timeIntervalSince1970, isDone: false)
+        let newItem = ToDoListItem(id: newId, title: title,type: type, dueDate: dueDate.timeIntervalSince1970, createdDate: Date().timeIntervalSince1970, isDone: false)
         
         //Save model
         let db = Firestore.firestore()

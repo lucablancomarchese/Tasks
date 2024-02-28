@@ -12,7 +12,32 @@ struct ToDoListItemView: View {
     
     let item: ToDoListItem
     
+    private var dueDate: Date {
+            Date(timeIntervalSince1970: item.dueDate)
+        }
+    
+    func calculateRemainingTime(from currentDate: Date, to dueDate: Date) -> String? {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day, .hour, .minute], from: currentDate, to: dueDate)
+        
+        guard let days = components.day, let hours = components.hour, let minutes = components.minute else {
+            return nil
+        }
+        
+        if days == 0 {
+            return "\(hours) hours \(minutes) minutes"
+        } else if days == 0 && hours == 0 {
+            return "\(minutes) minutes"
+        } else {
+            return "\(days) days \(hours) hours \(minutes) minutes"
+        }
+       
+    }
+  
+    
     var body: some View {
+        
+     
         ZStack {
             Rectangle()
                 .foregroundColor(Color(hex: "F0C43F"))
@@ -27,9 +52,17 @@ struct ToDoListItemView: View {
                         //.padding(.bottom, 10)
                         .padding(.leading, 15)
                     
-                    Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
-                        .font(.footnote)
-                        .padding(.leading, 15)
+                    
+                        Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
+                            .font(.footnote)
+                            .padding(.leading, 15)
+                        
+                     
+                        Text(calculateRemainingTime(from: Date(), to: dueDate) ?? "")
+                            .font(.footnote)
+                            .padding(.leading, 15)
+                    
+                    
                 }
                 Spacer()
                 
@@ -44,5 +77,5 @@ struct ToDoListItemView: View {
 }
 
 #Preview {
-    ToDoListItemView(item: .init(id: "123", title: "Gym", dueDate: Date().timeIntervalSince1970, createdDate: Date().timeIntervalSince1970, isDone: false))
+    ToDoListItemView(item: .init(id: "123", title: "Gym",type: "Deadline" ,dueDate: Date().timeIntervalSince1970, createdDate: Date().timeIntervalSince1970, isDone: false))
 }

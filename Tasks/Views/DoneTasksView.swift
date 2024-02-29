@@ -8,12 +8,12 @@ import FirebaseFirestoreSwift
 import SwiftUI
 
 struct DoneTasksView: View {
-    @StateObject var viewModel: ToDoListViewViewModel
+    @StateObject var viewModel: TasksViewViewModel
     @FirestoreQuery var items: [ToDoListItem]
     
     init(userId: String) {
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
-        self._viewModel = StateObject(wrappedValue: ToDoListViewViewModel(userId: userId))
+        self._viewModel = StateObject(wrappedValue: TasksViewViewModel(userId: userId))
     }
     var body: some View {
         NavigationView {

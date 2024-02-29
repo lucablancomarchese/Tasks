@@ -8,7 +8,7 @@ import FirebaseFirestoreSwift
 import SwiftUI
 
 struct TasksView: View {
-    @StateObject var viewModel: ToDoListViewViewModel
+    @StateObject var viewModel: TasksViewViewModel
     @FirestoreQuery var items: [ToDoListItem]
     
     private var uid: String
@@ -18,7 +18,7 @@ struct TasksView: View {
     init(userId: String) {
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
         
-        self._viewModel = StateObject(wrappedValue: ToDoListViewViewModel(userId: userId))
+        self._viewModel = StateObject(wrappedValue: TasksViewViewModel(userId: userId))
         
         self.uid = userId
     }

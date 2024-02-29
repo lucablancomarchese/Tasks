@@ -11,7 +11,7 @@ import FirebaseFirestore
 /// Viewmodel for list of all items
 /// Primary tab
 
-class ToDoListViewViewModel: ObservableObject {
+class TasksViewViewModel: ObservableObject {
     @Published var showingNewItemView = false
     
     private let userId: String

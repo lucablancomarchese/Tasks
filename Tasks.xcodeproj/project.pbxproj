@@ -97,7 +97,7 @@
 		7AEEB57E2B4772C00021011E /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB57D2B4772C00021011E /* ProfileViewViewModel.swift */; };
 		7AEEB5802B4772CD0021011E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB57F2B4772CD0021011E /* LoginViewViewModel.swift */; };
 		7AEEB5822B4772E20021011E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB5812B4772E20021011E /* RegisterViewViewModel.swift */; };
-		7AEEB5842B4773090021011E /* ToDoListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB5832B4773090021011E /* ToDoListViewViewModel.swift */; };
+		7AEEB5842B4773090021011E /* TasksViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB5832B4773090021011E /* TasksViewViewModel.swift */; };
 		7AEEB5862B47731E0021011E /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB5852B47731E0021011E /* ToDoListItemViewViewModel.swift */; };
 		7AEEB5882B47732F0021011E /* NewItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEB5872B47732F0021011E /* NewItemViewViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -130,7 +130,7 @@
 		7AEEB57D2B4772C00021011E /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		7AEEB57F2B4772CD0021011E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		7AEEB5812B4772E20021011E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
-		7AEEB5832B4773090021011E /* ToDoListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewViewModel.swift; sourceTree = "<group>"; };
+		7AEEB5832B4773090021011E /* TasksViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewViewModel.swift; sourceTree = "<group>"; };
 		7AEEB5852B47731E0021011E /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		7AEEB5872B47732F0021011E /* NewItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				7AEEB57B2B4772B30021011E /* MainViewViewModel.swift */,
-				7AEEB5832B4773090021011E /* ToDoListViewViewModel.swift */,
+				7AEEB5832B4773090021011E /* TasksViewViewModel.swift */,
 				7AEEB57D2B4772C00021011E /* ProfileViewViewModel.swift */,
 				7AEEB5872B47732F0021011E /* NewItemViewViewModel.swift */,
 				7AEEB5852B47731E0021011E /* ToDoListItemViewViewModel.swift */,
@@ -454,7 +454,7 @@
 				7A7F668F2B4A095A00152692 /* TDButton.swift in Sources */,
 				7A35159A2B8E2033005CD961 /* CalendarView.swift in Sources */,
 				7AEEB5742B4771320021011E /* ToDoListItemView.swift in Sources */,
-				7AEEB5842B4773090021011E /* ToDoListViewViewModel.swift in Sources */,
+				7AEEB5842B4773090021011E /* TasksViewViewModel.swift in Sources */,
 				7AEEB5432B4766860021011E /* MainView.swift in Sources */,
 				7AEEB57E2B4772C00021011E /* ProfileViewViewModel.swift in Sources */,
 				7AEEB5822B4772E20021011E /* RegisterViewViewModel.swift in Sources */,

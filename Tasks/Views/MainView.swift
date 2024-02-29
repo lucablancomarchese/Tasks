@@ -20,7 +20,7 @@ struct MainView: View {
     @ViewBuilder
     var accountView: some View {
         TabView {
-            ToDoListView(userId: viewModel.currentUserID).tabItem {
+            TasksView(userId: viewModel.currentUserID).tabItem {
                 Label("Tasks", systemImage: "checklist")
             }
             CalendarView().tabItem {

@@ -39,10 +39,13 @@ struct ToDoListItemView: View {
         
      
         ZStack {
-            Rectangle()
-                .foregroundColor(Color(hex: "F0C43F"))
-                .frame(height: 100)
-                .cornerRadius(15)
+            
+                Rectangle()
+                    .foregroundColor(item.type == "Deadline" ? Color(hex: "F0C43F") : Color(hex: "1fa748"))
+                    .frame(height: 100)
+                    .cornerRadius(15)
+            
+            
             HStack {
                 
                 VStack(alignment: .leading) {

@@ -26,6 +26,9 @@ struct DoneTasksView: View {
                     }
                 }.listStyle(PlainListStyle())
             }.navigationTitle("Done Tasks")
+            
+           
+                
         }
     }
 }

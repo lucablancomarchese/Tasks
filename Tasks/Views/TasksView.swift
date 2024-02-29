@@ -7,7 +7,7 @@
 import FirebaseFirestoreSwift
 import SwiftUI
 
-struct ToDoListView: View {
+struct TasksView: View {
     @StateObject var viewModel: ToDoListViewViewModel
     @FirestoreQuery var items: [ToDoListItem]
     
@@ -60,5 +60,5 @@ struct ToDoListView: View {
 }
 
 #Preview {
-    ToDoListView(userId: "AzKT1TUszpUf9NK9BZmqM1ayfky2")
+    TasksView(userId: "AzKT1TUszpUf9NK9BZmqM1ayfky2")
 }

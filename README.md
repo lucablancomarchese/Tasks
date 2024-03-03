@@ -19,8 +19,10 @@
 ## 🎥 Video
 
 
+https://github.com/lucablancomarchese/Tasks/assets/118488078/a2fbe716-a9f4-4a34-9ed7-723cc1bd6c35
 
-https://github.com/lucablancomarchese/Tasks/assets/118488078/c263132c-9eee-4c2a-a120-59a857cdd3ab
+
+
 
 
 
